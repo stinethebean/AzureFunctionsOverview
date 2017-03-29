@@ -1,0 +1,18 @@
+{
+  "bindings": [
+    {
+      "name": "flightCheckTimer",
+      "type": "timerTrigger",
+      "direction": "in",
+      "schedule": "0 0 * * * *"
+    },
+    {
+      "name": "flight",
+      "type": "queue",
+      "direction": "out",
+      "queueName": "flights",
+      "connection": "claimcompassapistorage_STORAGE"
+    }
+  ],
+  "disabled": false
+}

@@ -1,0 +1,17 @@
+{
+  "bindings": [
+    {
+      "name": "myTimer",
+      "type": "timerTrigger",
+      "direction": "in",
+      "schedule": "0 0 */3 * * *"
+    },
+    {
+      "type": "queue",
+      "name": "bookingItem",
+      "queueName": "bookings",
+      "direction": "out"
+    }
+  ],
+  "disabled": false
+}

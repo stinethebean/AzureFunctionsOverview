@@ -1,0 +1,21 @@
+{
+  "bindings": [
+    {
+      "name": "myQueueItem",
+      "type": "queueTrigger",
+      "direction": "in",
+      "queueName": "flights",
+      "connection": "claimcompassapistorage_STORAGE"
+    },
+    {
+      "type": "documentDB",
+      "name": "outputDocument",
+      "databaseName": "checkedflights",
+      "collectionName": "checkedflights",
+      "createIfNotExists": false,
+      "connection": "checkedflights_DOCUMENTDB",
+      "direction": "out"
+    }
+  ],
+  "disabled": false
+}
